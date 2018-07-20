@@ -124,8 +124,7 @@ module.exports = {
 
 		// define the parameters
 		let params = {
-			// FunctionName: 'ENTER_YOUR_FUNCTION_NAME',
-			FunctionName: 'calculator-service-prod-calculatorFunction',
+			FunctionName: 'calculator-service-prod-calculatorFunction', // Enter the function name from before
 			InvocationType: 'RequestResponse',
 			Payload: JSON.stringify(payload)
 		}
