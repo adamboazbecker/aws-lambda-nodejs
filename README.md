@@ -42,4 +42,37 @@ functions:
           cors: true
 ```
 
+Now update the `handler.js` function.
+
+```
+// handler.js
+
+module.exports = {
+  async processContributions (event, context, callback) {
+
+    // define the callback response
+    const done = (callback, err, responseString) => {
+      callback(null, {
+        statusCode: err ? '400' : '200',
+        body: err ? err.message : responseString,
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*' // Required for CORS support to work
+        }
+      })
+    }
+
+    // extract the argument
+    const argument = event.argument
+
+    const answer = argument * argument
+
+    // call the done function with the answer
+    done(callback, null, answer)
+  }
+}
+
+```
+
+
 
