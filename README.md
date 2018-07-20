@@ -33,13 +33,8 @@ provider:
 
 // Update the functions section with your specific calling method and function names:
 functions:
-  myFunctionName:
-    handler: handler.myMethodName
-    events:
-      - http:
-          method: post
-          path: process_contributions
-          cors: true
+  calculatorFunction:
+    handler: handler.squareTheArgumentMethod
 ```
 
 Now update the `handler.js` function.
@@ -48,7 +43,7 @@ Now update the `handler.js` function.
 // handler.js
 
 module.exports = {
-  async processContributions (event, context, callback) {
+  async squareTheArgumentMethod (event, context, callback) {
 
     // define the callback response
     const done = (callback, err, responseString) => {
