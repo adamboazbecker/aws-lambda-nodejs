@@ -1,5 +1,7 @@
 # aws-lambda-nodejs
-How to set up a cloud calculator on AWS using lambda
+How to set up a cloud calculator on AWS using lambda.
+
+Extra reference can be found on the lambda docs (https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) and on The Serverless Framework docs (https://serverless.com/framework/docs/). Pluralsight also has excellent courses on the topic.
 
 ##### Create an AWS account
 Go to AWS -> Users -> Add User -> Get access key ID & secret key
