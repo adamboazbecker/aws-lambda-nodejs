@@ -77,6 +77,8 @@ module.exports = {
 ##### Record the function name
 The previous command will return the following:
 ```
+-----------------------------------
+-----------------------------------
 Service Information
 service: calculator-service
 stage: prod
