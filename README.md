@@ -6,7 +6,7 @@ Extra reference can be found on the lambda docs (https://docs.aws.amazon.com/lam
 ##### Create an AWS account
 Go to AWS -> Users -> Add User -> Get access key ID & secret key
 
-##### Download node (or python)
+##### Download node
 Visit https://nodejs.org/en/download/
 
 ##### Install The Serverless Framework using npm (Node Package Manager)
