@@ -48,9 +48,10 @@ module.exports = {
     // extract the argument
     const argument = event.argument
 
+    // square the argument
     const answer = argument * argument
 
-    // call the callback with the answer
+    // return the argument with a callback function
     callback(null, {
       statusCode: '200',
       body: answer,
