@@ -74,7 +74,7 @@ module.exports = {
 ```
 
 ##### Deploy the service
-`serverless deploy`
+`$ serverless deploy`
 
 ##### Record the function name
 The previous command will return the following:
