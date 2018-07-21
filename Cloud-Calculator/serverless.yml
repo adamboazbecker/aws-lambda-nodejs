@@ -1,0 +1,11 @@
+service: calculator-service
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: prod
+  region: us-west-2
+
+functions:
+  calculatorFunction:
+    handler: handler.squareTheArgumentMethod
