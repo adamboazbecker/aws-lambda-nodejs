@@ -15,6 +15,7 @@ Visit https://nodejs.org/en/download/
 ##### Enter your AWS credentials using the AWS-CLI
 `$ pip3 install awscli --upgrade --user`
 Enter the credentials to the AWS by entering
+
 `$ aws config`
 
 ##### Create a Serverless Framework service from a template - we will call it Cloud-Calculator
