@@ -10,15 +10,15 @@ Go to AWS -> Users -> Add User -> Get access key ID & secret key
 Visit https://nodejs.org/en/download/
 
 ##### Install The Serverless Framework using npm (Node Package Manager)
-`npm install serverless -g`
+`$ npm install serverless -g`
 
 ##### Enter your AWS credentials using the AWS-CLI
-`pip3 install awscli --upgrade --user`
+`$ pip3 install awscli --upgrade --user`
 Enter the credentials to the AWS by entering
-`aws config`
+`$ aws config`
 
 ##### Create a Serverless Framework service from a template - we will call it Cloud-Calculator
-`serverless create --template aws-nodejs --path Cloud-Calculator`
+`$ serverless create --template aws-nodejs --path Cloud-Calculator`
 
 This last command creates a directory called **Cloud-Calculator** that contains 2 files: `handler.js` and `serverless.yml`.
 
@@ -96,7 +96,7 @@ functions:
 
 #### Call the lambda function from a server.js
 First, install the `aws-sdk` library in node.
-`npm install aws-sdk`
+`$ npm install aws-sdk`
 
 Create a file called `server.js` and write into it the command to invoke our lambda function.
 
